@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">> -->
+    <title>Connect with me!</title>  <!-- ΑΥΤΟ ΕΜΦΑΝΙΖΕΤΑΙ ΣΤΟ tab bar-->
+</head>
+<body>
+    <h3>In this page you can write some details , to let me know how can i connect with you !</h3>
+    
+    <form action="Connect.html"  method="get"> <!-- φτιαχνω μια φορμα υποβολης που τα στοιχεια θα πανε στην Connect.hmtl με την μεθοδο get-->
+
+
+        <p><label for="name">First Name: </label> <!-- ΕΤΙΚΕΤΑ -->
+        <input type="text" id="name" placeholder="Xose"  size="20 "required><!-- TEXTFIELD ,Placeholder + Απαιτουμενο πεδίο -->
+        <p>
+
+        </p> 
+        <label for="surname">Surname: </label>  <!-- ΕΤΙΚΕΤΑ -->
+        <input type="text" id="surname" name="surname"  size="22" placeholder="Armando " required>
+        </p>
+
+
+       <p>
+        <label for="email">Give me your email : </label> <!-- ΕΤΙΚΕΤΑ -->
+        <input type="email"placeholder="xosearmando@yahoo.com" multiple> <!-- TEXTFIELD ΤΥΠΟΥ email ! -->
+       </p>
+
+
+       <p>
+        <label for="number">Your phone number: </label> <!-- ΕΤΙΚΕΤΑ -->
+        <input type="tel" id="number" name="number" pattern="6[0-9]{9}" required> <!-- TEXTFIELD ΤΥΠΟΥ ΤΗΛΕΦΩΝΟ ΠΟΥ ΞΕΚΙΝΑΕΙ ΑΠΟ 6.... -->
+        <small>Format:6948365966</small> <!-- ενημερωτικο μηνυμα -->
+       </p>
+
+
+       <p>
+        <label for="timetocall">What time to call you: </label> <!-- ΕΤΙΚΕΤΑ -->
+        <input type="datetime-local" value="2023-02-22T09:00"> <!-- TestField για εισαγωγη ημερομηνιας κτλ -->
+       </p>
+
+
+       <P>
+        <label for="newsfeed"> Do you want to learn our news?</label><br> <!--ΕΤΙΚΕΤΑ -->
+
+        <input type="radio" id="yesid" name="SOS"> <!--ΕΜΦΑΝΙΖΕΙ ΕΝΑ ΚΥΚΛΑΚΙ ΠΟΥ ΜΠΟΡΕΙΣ ΝΑ ΤΟ ΕΠΙΛΕΞΕΙΣ ΠΡΕΠΕΙ ΝΑ ΕΧΟΥΝ ΙΔΙΟ name!-->
+        <label for="yesid">Yes,of Course</label>
+
+        <input type="radio" id="noid" name="SOS"><!--ΕΜΦΑΝΙΖΕΙ ΕΝΑ ΚΥΚΛΑΚΙ ΠΟΥ ΜΠΟΡΕΙΣ ΝΑ ΤΟ ΕΠΙΛΕΞΕΙΣ  ΠΡΕΠΕΙ ΝΑ ΕΧΟΥΝ ΙΔΙΟ name!-->
+        <label for="noid">No,Thank you </label>
+       </P>
+
+
+       <p>
+        <label for="frequency">How often do you reply on your emails?</label>     <!-- ΕΤΙΚΕΤΑ -->
+        <input type="range" id="frequency"step="any" list="XXX"> <!-- ΓΙΑ ΝΑ ΕΠΙΛΕΞΩ ΤΟ ΕΥΡΟΣ -->
+
+        <datalist id="XXX"> <!-- Χρειαζεται Javascript -->
+            <option value="0"label="seldom">seldom</option> 
+            <option value="50" label="many times">most of times</option>
+            <option value="100" label="always">always</option>
+        </datalist>
+       </p>
+
+
+       <p>
+        <label for="files">Send me your CV:</label> <!-- ΕΤΙΚΕΤΑ -->
+        <input type="file" accept=".doc ,.docx , .pdf" multiple><br> <!--TEXTFIELD ΓΙΑ ΕΙΣΑΓΩΓΗ ΑΡΧΕΙΟΥ (εδω μπορω και πολλα να εισαγω) !-->
+        <small>Only doc/docx/pdf files are imported</small>
+       </p>
+
+
+       <p>
+        <label for="url">You can add your LinkedIn Profile to add you: </label> <!-- ΕΤΙΚΕΤΑ -->
+        <input type="url" id="url" placeholder="https:linkedin.com/in/salamalekoum" pattern:"https://www.linkedin.com/.*" size="30" required> <!--- ΕΤΙΚΕΤΑ ΓΙΑ ΕΙΣΑΓΩΓΗ url-->
+       </p>
+
+       <p>
+        <h4>It's time to enroll!(If you've already in, skip this🤫) </h4>
+        <label for="nameID">Username: </label> <!-- ΕΤΙΚΕΤΑ-->
+        <input type="text" id="nameID" size="5" required><br><br> <!--ΑΠΛΟ TEXTFIELD -->
+
+        <label for="passwordID">Password: </label><!-- ΕΤΙΚΕΤΑ-->
+        <input type="password" id="passwordID" minlenght="5" required> <!-- TEXTFIELD για ΕΙΣΑΓΩΓΗ ΚΩΔΙΚΟΥ-->
+       </p>
+
+       <input type="submit" value="Sumbit !"> <!-- ΑΠΟΘΗΚΕΥΣΗ ,ΕΠΙΚΥΡΩΣΗ ΚΑΙ ΑΠΟΣΤΟΛΗ ΔΕΔΟΜΕΝΩΝ ΦΟΡΜΑΣ ΣΤΗΝ ΣΕΛΙΔΑ ΠΟΥ ΛΕΕΙ ΤΟ action -->
+       <input type="reset" value="Reset the form"> <!-- ΔΙΑΓΡΑΦΗ ΟΣΩΝ ΕΧΟΥΝ ΓΡΑΦΤΕΙ -->
+
+
+    </form>
+    <h3><a href="index.html">Go to the main page </a></h3>
+
+
+
+
+    
+</body>
+</html>
